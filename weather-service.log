@@ -1,0 +1,47 @@
+2020-04-13 11:28:03.457  INFO 7477 --- [main] c.s.weather.WeatherRestApiApplication    : Starting WeatherRestApiApplication on Simarpreets-MacBook-Pro.local with PID 7477 (/Volumes/SimarVolume/StudyMaterial/intigral/weather-rest-api/target/classes started by singh in /Volumes/SimarVolume/StudyMaterial/intigral/weather-rest-api)
+2020-04-13 11:28:03.473  INFO 7477 --- [main] c.s.weather.WeatherRestApiApplication    : No active profile set, falling back to default profiles: default
+2020-04-13 11:28:05.498  INFO 7477 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8090 (http)
+2020-04-13 11:28:05.513  INFO 7477 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-04-13 11:28:05.513  INFO 7477 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-04-13 11:28:05.634  INFO 7477 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-04-13 11:28:05.634  INFO 7477 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2045 ms
+2020-04-13 11:28:06.283  INFO 7477 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-04-13 11:28:06.350  INFO 7477 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-13 11:28:06.843  INFO 7477 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4bd5849e, org.springframework.security.web.context.SecurityContextPersistenceFilter@3ac3f6f, org.springframework.security.web.header.HeaderWriterFilter@d5556bf, org.springframework.security.web.csrf.CsrfFilter@34aeacd1, org.springframework.security.web.authentication.logout.LogoutFilter@61f6d381, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@439e3cb4, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@433c6abb, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@7cdbaa50, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@4c361f63, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@18f55704, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1386313f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@39909d1a, org.springframework.security.web.session.SessionManagementFilter@b112b13, org.springframework.security.web.access.ExceptionTranslationFilter@4a37191a, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3a2d3909]
+2020-04-13 11:28:06.863  INFO 7477 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2020-04-13 11:28:06.889  INFO 7477 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-04-13 11:28:06.938  INFO 7477 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-04-13 11:28:06.996  INFO 7477 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-04-13 11:28:07.283  INFO 7477 --- [scheduling-1] c.s.w.controllers.ClearCacheScheduler    : Scheduler: Clearing all the cache-regions
+2020-04-13 11:28:07.291  INFO 7477 --- [scheduling-1] c.s.w.controllers.ClearCacheScheduler    : Scheduler: Cache cleared successfully!
+2020-04-13 11:28:07.344  INFO 7477 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8090 (http) with context path ''
+2020-04-13 11:28:07.350  INFO 7477 --- [main] c.s.weather.WeatherRestApiApplication    : Started WeatherRestApiApplication in 4.747 seconds (JVM running for 5.444)
+2020-04-13 11:28:16.496  INFO 7477 --- [http-nio-8090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-13 11:28:16.496  INFO 7477 --- [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-04-13 11:28:16.516  INFO 7477 --- [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 19 ms
+2020-04-13 11:34:36.907  INFO 7477 --- [http-nio-8090-exec-9] c.s.w.controllers.WeatherController      : Request Recieved: Get Weather Details for City - Dubai
+2020-04-13 11:34:36.924  INFO 7477 --- [http-nio-8090-exec-9] c.s.w.services.GenericWeatherService     : Invoke service method for Weather of City: Dubai
+2020-04-13 11:34:36.924  INFO 7477 --- [http-nio-8090-exec-9] c.s.w.services.GenericWeatherService     : Preparing URL.
+2020-04-13 11:34:36.924  INFO 7477 --- [http-nio-8090-exec-9] c.s.w.services.GenericWeatherService     : Prepared URL: https://api.openweathermap.org/data/2.5/weather?q=Dubai&appid=ffa6f13ea40a22452bba3be726315d3f
+2020-04-13 11:34:38.003  INFO 7477 --- [http-nio-8090-exec-9] c.s.w.services.GenericWeatherService     : Invoked service method for City Weather complete
+2020-04-13 11:34:38.004  INFO 7477 --- [http-nio-8090-exec-9] c.s.w.controllers.WeatherController      : Request Prcessed: Weather of City Status: true
+2020-04-13 11:35:22.628  INFO 7477 --- [http-nio-8090-exec-8] c.s.w.controllers.WeatherController      : Request Recieved: Get Weather Details for City -  
+2020-04-13 11:35:22.629  INFO 7477 --- [http-nio-8090-exec-8] c.s.w.controllers.WeatherController      : Invalid Request: Missing parameter {city}. 
+2020-04-13 11:35:55.926  INFO 7477 --- [http-nio-8090-exec-10] c.s.w.controllers.WeatherController      : Request Recieved: Get Weather Details for City -  xyz
+2020-04-13 11:35:55.927  INFO 7477 --- [http-nio-8090-exec-10] c.s.w.services.GenericWeatherService     : Invoke service method for Weather of City:  xyz
+2020-04-13 11:35:55.927  INFO 7477 --- [http-nio-8090-exec-10] c.s.w.services.GenericWeatherService     : Preparing URL.
+2020-04-13 11:35:55.927  INFO 7477 --- [http-nio-8090-exec-10] c.s.w.services.GenericWeatherService     : Prepared URL: https://api.openweathermap.org/data/2.5/weather?q= xyz&appid=ffa6f13ea40a22452bba3be726315d3f
+2020-04-13 11:37:34.079  INFO 7477 --- [http-nio-8090-exec-7] c.s.w.controllers.WeatherController      : Request Recieved: Get Weather Details for City -  xyz
+2020-04-13 11:37:34.079  INFO 7477 --- [http-nio-8090-exec-7] c.s.w.services.GenericWeatherService     : Invoke service method for Weather of City:  xyz
+2020-04-13 11:37:34.079  INFO 7477 --- [http-nio-8090-exec-7] c.s.w.services.GenericWeatherService     : Preparing URL.
+2020-04-13 11:37:34.080  INFO 7477 --- [http-nio-8090-exec-7] c.s.w.services.GenericWeatherService     : Prepared URL: https://api.openweathermap.org/data/2.5/weather?q= xyz&appid=ffa6f13ea40a22452bba3be726315d3f
+2020-04-13 11:37:47.520  INFO 7477 --- [http-nio-8090-exec-1] c.s.w.controllers.WeatherController      : Request Recieved: Get Weather Details for City - dubai
+2020-04-13 11:37:47.520  INFO 7477 --- [http-nio-8090-exec-1] c.s.w.services.GenericWeatherService     : Invoke service method for Weather of City: dubai
+2020-04-13 11:37:47.520  INFO 7477 --- [http-nio-8090-exec-1] c.s.w.services.GenericWeatherService     : Preparing URL.
+2020-04-13 11:37:47.520  INFO 7477 --- [http-nio-8090-exec-1] c.s.w.services.GenericWeatherService     : Prepared URL: https://api.openweathermap.org/data/2.5/weather?q=dubai&appid=ffa6f13ea40a22452bba3be726315d3f
+2020-04-13 11:37:47.889  INFO 7477 --- [http-nio-8090-exec-1] c.s.w.services.GenericWeatherService     : Invoked service method for City Weather complete
+2020-04-13 11:37:47.889  INFO 7477 --- [http-nio-8090-exec-1] c.s.w.controllers.WeatherController      : Request Prcessed: Weather of City Status: true
+2020-04-13 11:38:13.574  INFO 7477 --- [http-nio-8090-exec-2] c.s.w.controllers.WeatherController      : Request Recieved: Get Weather Details for City - dubai
+2020-04-13 11:38:13.575  INFO 7477 --- [http-nio-8090-exec-2] c.s.w.controllers.WeatherController      : Request Prcessed: Weather of City Status: true
+2020-04-13 12:50:27.972  INFO 7477 --- [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService 'taskScheduler'
+2020-04-13 12:50:27.973  INFO 7477 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
